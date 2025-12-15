@@ -1,0 +1,31 @@
+.window {
+    width: 100%;
+    max-width: 420px;
+    background: var(--window-bg);
+    border: 2px solid var(--window-border);
+    z-index: 1;
+}
+
+.window-header {
+    background: linear-gradient(#4b7bec, var(--xp-blue));
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+}
+
+.window-buttons button {
+    background: #dcdcdc;
+    border: 1px solid #555;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+    cursor: default;
+}
+
+.window-body {
+    padding: 1.5rem;
+}
