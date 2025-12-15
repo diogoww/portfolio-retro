@@ -37,3 +37,24 @@ function typeReadme() {
     setTimeout(type, 700); // espera o boot terminar
 }
 
+// botoes da janela (fake xp)
+function windowButtons() {
+    const buttons = document.querySelectorAll(".window-buttons button");
+    const windowEl = document.querySelector(".window");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.style.background = "#bbb";
+
+            setTimeout(() => {
+                btn.style.background = "#dcdcdc";
+            }, 120);
+        });
+    });
+
+    buttons[2].addEventListener("click", () => {
+        windowEl.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+        windowEl.style.opacity = "0";
+        windowEl.style.transform = "scale(0.95)";
+    });
+}
