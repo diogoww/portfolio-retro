@@ -23,6 +23,9 @@ function typeReadme() {
     const pre = document.querySelector(".readme pre");
     const readmeText = `👋 Olá, visitante!
 
+Eu sou o Diogo, apaixonado por técnologia, música e esportes!
+Essas são as minhas infos! 👇
+
 - Área: Desenvolvimento / Análise de Dados
 - Local: Curitiba - PR, Brasil
 - Skills Dev:
