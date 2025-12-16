@@ -81,11 +81,14 @@ function windowButtons() {
 
             // se for o botão X
             if (isCloseButton) {
-                window.open(
+                const newWindow = window.open(
                     "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                    "_blank",
-                    "noopener,noreferrer"
+                    "_blank"
                 );
+                // Remove a referência ao opener para segurança
+                if (newWindow) {
+                    newWindow.opener = null;
+                }
             }
         });
     });
