@@ -13,10 +13,11 @@
 
 .profile h1 {
     font-family: 'VT323', monospace;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .subtitle {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: var(--text-muted);
 }
