@@ -54,8 +54,8 @@ here's a bit about me! 👇
             // quando termina, transforma o texto em link real
             const finalLink = pre.textContent;
             pre.innerHTML = finalLink.replace(
-                "curriculo.pdf",
-                `<a href="assets/curriculo-diogo.pdf" target="_blank" rel="noopener noreferrer">curriculo.pdf</a>`
+                "resume.pdf",
+                `<a href="assets/curriculo-diogo.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>`
             );
         }
     }
