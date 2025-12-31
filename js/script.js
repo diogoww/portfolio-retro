@@ -36,9 +36,6 @@ here's a bit about me! 👇
 - data analyst skills:
   • power BI, excel
   • critical analysis & strategic insights
-
-📄 resume
-→ resume.pdf
 `;
 
     let index = 0;
@@ -49,13 +46,6 @@ here's a bit about me! 👇
             pre.textContent += readmeText.charAt(index);
             index++;
             setTimeout(type, 18);
-        } else {
-            // quando termina, transforma o texto em link real
-            const finalLink = pre.textContent;
-            pre.innerHTML = finalLink.replace(
-                "resume.pdf",
-                `<a href="assets/curriculo-diogo.pdf" target="_blank" rel="noopener noreferrer">resume.pdf</a>`
-            );
         }
     }
     setTimeout(type, 700); //comeca depois do boot da janela
